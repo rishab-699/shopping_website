@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1em 5em;
+    border-bottom: 1px solid rgb(104, 104, 104);
+    gap: 3em;
+    max-width: 98%;
+  }
+  .logo{
+    width: 100em;
+    height: 50em;
+  }
+  .logo img{
+    height: 100%;
+    width: 100%;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3em;
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.2em 0.5em;
+    gap: 60em;
+  }
+  .action-icons{
+    padding: 5em ;
+  }
+  .action-icons li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  li{
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  li img{
+    height: 2.5em;
+    width: 2.5em;
+  }
+  p{
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+  }
+h1{
+    font-size: 3.6rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+.ads-courosel{
+    width: 100%;
+    height: 100em;
+    position: relative;
+    margin-top: 3em;
+    overflow: hidden;
+}
+.ads-courosel .slide{
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 1s ease-in-out; /* Add transition for opacity */
+}
+
+.slide img{
+    height: 100%;
+    width: 100%;
+}
+.slide-pointer{
+    border-radius: 50%;
+    background-color: rgb(73, 73, 73);
+    height: 6em;
+    width: 6em;
+}
+.slide-pointer:hover{
+    background-color: white;
+}
+.ads-pointer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    padding: 3em;
+}
+#NP-section, #OP-section{
+    padding: 5em;
+}
+#new-products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.product-card .img{
+    width: 415em;
+    height: 415em;
+}
+.product-card .img img{
+    height: 100%;
+    width: 100%;
+}
+.product-card{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.info{
+    width: 100%;
+}
+.sec-head{
+    padding: 50em 10em ;
+}
+.sec-head h1{
+    letter-spacing: 0.5em;
+}
+#OP-section .sec-head h1{
+    letter-spacing: 0.2em;
+}
+#category-section{
+    padding: 5em;
+    background: rgba(245, 103, 0, 0.14);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#category-section .sec-head{
+    padding: 30em 10em;
+}
+#category-section .sec-head h1{
+    letter-spacing: 0.2em;
+}
+#products-category{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 180em);
+    grid-template-rows: auto;
+    grid-gap: 40em;
+    overflow: hidden;
+    max-width: 99%;
+}
+#products-category .category-card{
+    width: 280em;
+    height: 400em;
+    position: relative;
+    
+}
+#products-category .category-card .img img{
+    height: 100%;
+    width: 100%;
+}
+#products-category .category-card .img{
+    width: 100%;
+    height: 100%;
+}
+#products-category .category-card .info{
+    position: absolute; 
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: rgba(245, 103, 0, 0.54); 
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    margin: 3em;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section{
+    max-width: 95%;
+}
+#products-category .category-card .info h2,#products-category .category-card .info h3{
+    color: white;
+}
+
+.profiletab ul{
+    flex-direction: column;
+    gap: 3em;
+    margin: 2em;
+    margin-bottom: 2em;
+}
+.profiletabhide{
+    opacity: 0;
+    position: absolute;
+}
+.profiletab{
+    max-width: 80em;
+    border-radius: 0.5625rem;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    margin-right: 80em;
+    padding: 3em;
+    cursor: pointer;
+}
+.profiletab div button{
+    border-radius: 0.25rem;
+    border: 0.5px solid #F56700;
+    background: rgba(217, 217, 217, 0.00);
+    font-size: 2rem;
+    padding: 0.5em 0.8em;
+    color: #F56700;
+    font-weight: bold
+}
+.profiletab div{
+    padding: 2em;
+    border-bottom: 1px solid rgb(78, 78, 78);
+    width: 90%;
+    margin: auto;
+}
