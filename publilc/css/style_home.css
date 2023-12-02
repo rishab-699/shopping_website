@@ -68,7 +68,10 @@ h2{
 h3{
     font-size: 2.4rem;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
 .ads-courosel{
     width: 100%;
     height: 100em;
@@ -222,7 +225,7 @@ section{
     position: absolute;
 }
 .profiletab{
-    max-width: 80em;
+    max-width: fit-content;
     border-radius: 0.5625rem;
     background: #FFF;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
@@ -241,7 +244,13 @@ section{
     font-size: 2rem;
     padding: 0.5em 0.8em;
     color: #F56700;
-    font-weight: bold
+    font-weight: bold;
+}
+.profiletab div button a{
+    font-size: 2rem;
+    padding: 0.5em 0.8em;
+    color: #F56700;
+    font-weight: bold;
 }
 .profiletab div{
     padding: 2em;

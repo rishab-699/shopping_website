@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopIt NOW!</title>
+    <link rel="stylesheet" href="/style_home.css" />
+    <link rel="stylesheet" href="/style_login.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+        <section class="nav">
+      <div class="container">
+        <div class="logo">
+          <a href="/"><img src="LOGO.svg" alt="LOGO HERE" /></a>
+        </div>
+        <nav>
+          <ul>
+            <li>category 1</li>
+            <li>category 2</li>
+            <li>category 3</li>
+            <li>category 4</li>
+          </ul>
+          <ul class="action-icons">
+            <li id="profile" onclick=profiletab(this)><img src="user.svg" alt="user" /><p>Profile</p></li>
+            <li><img src="WishList.svg" alt="Wish List" /><p>Wish List</p></li>
+            <li><img src="bag.svg" alt="Bag" /><p>Bag</p></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="profiletabhide" id="profiletab">
+        <div>
+            <h3>welcome</h3>
+            <button>
+                login/signup
+            </button>
+        </div>
+        <ul>
+            <li>Orders</li>
+            <li>Wish List</li>
+            <li>Contact Us</li>
+        </ul>
+      </div>
+      </section>
+      <section class="login">
+        <div class="login-card">
+            <form action="">
+                <h1>LOGIN/SIGNUP</h1>
+                <div class="input-group group-1">
+                    <h3>+91</h3>
+                    <input type="text" class="input-text" name="number" id="nubmer" placeholder="Enter your phone number"/>
+                </div>
+                <div class="input-group group-2">
+                <input type="checkbox" class="input-check" name="agreement" id="aggrement"/>
+                <h3>I accept all your terms & conditions</h3>
+                </div>
+                <button class="form-button" type="submit"> LOGIN / SIGNUP</button>
+            </form>
+        </div>
+      </section>
+    </div>
+    <script type="text/javascript" src="/animate.js"></script>
+  </body>
+</html>
