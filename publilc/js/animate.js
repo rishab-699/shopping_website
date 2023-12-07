@@ -42,3 +42,34 @@ function profiletab(){
         i = true;
     }
 }
+
+//function to work on single page product functionality
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('product-layout').style.display = 'none'
+
+});
+function productListDisplay(){
+    console.log('second function');
+    document.getElementById('products-display').style.display = 'block';
+    document.getElementById('product-layout').style.display = 'none';
+}
+function productDisplay(){
+    document.getElementById('products-display').style.display = 'none'
+    document.getElementById('product-layout').style.display = 'block'
+}
+
+function size_clicked(clkid){
+    console.log(clkid.id);
+    console.log(clkid.name +'='+ clkid.value);
+    var element = document.getElementById(clkid.id);
+    var buttons = document.querySelectorAll('.size-btn');
+    buttons.forEach(function(button) {
+        button.classList.remove('selected');
+    });
+    if (element) {
+
+        element.classList.toggle("selected");
+    } else {
+        console.error("Element not found with ID: " + clkid);
+    }
+}

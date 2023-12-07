@@ -1,0 +1,217 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopIt NOW! | PRODUCTS</title>
+    <link rel="stylesheet" href="/style_home.css" />
+    <link rel="stylesheet" href="/style_products.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="logo">
+          <img src="LOGO.svg" alt="LOGO HERE" />
+        </div>
+        <nav>
+          <ul>
+            <li>category 1</li>
+            <li>category 2</li>
+            <li>category 3</li>
+            <li>category 4</li>
+          </ul>
+          <ul class="action-icons">
+            <li id="profile" onclick="profiletab(this)"><img
+                src="user.svg"
+                alt="user"
+              /><p>Profile</p></li>
+            <li><img src="WishList.svg" alt="Wish List" /><p>Wish List</p></li>
+            <li><img src="bag.svg" alt="Bag" /><p>Bag</p></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="profiletabhide" id="profiletab">
+        <div>
+          <h3>welcome</h3>
+          <button>
+            <a href="/login">login/signup</a>
+          </button>
+        </div>
+        <ul>
+          <li>Orders</li>
+          <li>Wish List</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <section id="products-display">
+        <div class="ads-courosel">
+          <div class="slide" id="1"><img src="add1.jpg" alt="" /><p>SLIDE 1</p></div>
+          <div class="slide" id="2"><img src="add2.jpg" alt="" /><p>SLIDE 2</p></div>
+          <div class="ads-pointer" id="pointers">
+
+          </div>
+        </div>
+        <div class="main">
+          <div class="filters">
+            <h1>Filters</h1>
+
+            <div class="filter">
+                <form action="" class="main-category">
+                    <div class="input-group">
+                        <input type="radio" name="" id=""><h4>Men</h4>
+                    </div>
+                    <div class="input-group">
+                        <input type="radio" name="" id=""><h4>Women</h4>
+                    </div>
+                    <div class="input-group">
+                        <input type="radio" name="" id=""><h4>Boys</h4>
+                    </div>
+                    <div class="input-group">
+                        <input type="radio" name="" id=""><h4>Girls</h4>
+                    </div>
+                </form>
+                <form action="" class="sub-category">
+                    <div class="input-group">
+                        <input type="checkbox" name="" id=""><p>T-shirt</p>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" name="" id=""><p>Shirts</p>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" name="" id=""><p>Jeans</p>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" name="" id=""><p>Shoes</p>
+                    </div>
+                </form>
+                <form action="" class="price-category">
+                    <div class="input-group">
+                        <input type="checkbox" name="" id=""><p>Rs.300- Rs.1000</p>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" name="" id=""><p>Rs.1000- Rs.2000</p>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" name="" id=""><p>Rs.2000- Rs.5000</p>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" name="" id=""><p>Rs.5000 & above</p>
+                    </div>
+                </form>
+            </div>
+          </div>
+          <div class="main-content">
+            <div class="sec-head">
+              <h1>New Products</h1>
+            </div>
+            <div id="new-product" class="product-list">
+              <div class="product-card" onclick="productDisplay()">
+                <div class="img">
+                  <img src="add1.jpg" alt="" />
+                </div>
+                <div class="info">
+                  <h4>Product Title</h4>
+                  <p>main plain shirt</p>
+                  <h3>$999</h3>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="img">
+                  <img src="add1.jpg" alt="" />
+                </div>
+                <div class="info">
+                  <p>Product Title</p>
+                  <h3>$999</h3>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="img">
+                  <img src="add1.jpg" alt="" />
+                </div>
+                <div class="info">
+                  <p>Product Title</p>
+                  <h3>$999</h3>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="img">
+                  <img src="add1.jpg" alt="" />
+                </div>
+                <div class="info">
+                  <p>Product Title</p>
+                  <h3>$999</h3>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="img">
+                  <img src="add1.jpg" alt="" />
+                </div>
+                <div class="info">
+                  <p>Product Title</p>
+                  <h3>$999</h3>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="img">
+                  <img src="add1.jpg" alt="" />
+                </div>
+                <div class="info">
+                  <p>Product Title</p>
+                  <h3>$999</h3>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="img">
+                  <img src="add1.jpg" alt="" />
+                </div>
+                <div class="info">
+                  <p>Product Title</p>
+                  <h3>$999</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="product-layout">
+        <div class="main m2">
+            <div onclick="productListDisplay()"><img src="back.svg"  class="back-button" alt=""></div>
+            <div class="product-content">
+                <div class="product-images">
+                    <div class="img"><img src="add2.jpg" alt=""/></div>
+                    <div class="img"><img src="add2.jpg" alt=""/></div>
+                    <div class="img"><img src="add2.jpg" alt=""/></div>
+                    <div class="img"><img src="add2.jpg" alt=""/></div>
+                    <div class="img"><img src="add2.jpg" alt=""/></div>
+                </div>
+                <div class="product-infos">
+                    <div class="head-sec">
+                        <h2>Product Title</h2>
+                        <p>Product sub title</p>
+                        <h2 id="price">Rs. 1199 MRP</h2>
+                    </div>
+                    <div class="sizes">
+                        <button class="size-btn" name="size" id="38" value="38" onclick="size_clicked(this)">38</button>
+                        <button class="size-btn" name="size" id="40" value="40" onclick="size_clicked(this)">40</button>
+                        <button class="size-btn" name="size" id="42" value="42" onclick="size_clicked(this)">42</button>
+                        <button class="size-btn" name="size" id="44" value="44" onclick="size_clicked(this)">44</button>
+                    </div>
+                    <div class="order-btns">
+                        <button class="bag-btn">Add to Bag</button>
+                        <button class="wishlist-btn">WISHLIST</button>
+                    </div>
+                    <div class="productdetails">
+                        <h1>Product Details</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Voluptas nemo hic expedita 
+                            dicta enim, quae sint, possimus commodi quam 
+                            voluptatum ex ipsa accusantium vero dignissimos, 
+                            cupiditate architecto fugit alias asperiores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    </div>
+    <script type="text/javascript" src="/animate.js"></script>
+  </body>
+</html>
