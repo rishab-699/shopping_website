@@ -197,3 +197,45 @@
     margin-top: 50em;
     border-top: 1px solid grey;
 }
+
+.wishlistProduct{
+    position: relative;
+}
+.cancel{
+    position: absolute;
+    top: 0.1em;
+    right: 0.1em;
+    font-size: 2.5rem;
+    padding: 0.3em;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(233, 232, 232);
+    text-align: center;
+}
+.cancel:active{
+    background-color: rgb(192, 191, 191);
+    transform: translateY(2px);
+}
+.cancel_btn{
+    height: 1em;
+    width: 1em;
+}
+
+.bag_btn{
+    margin-top: 0.3em;
+    width: 90%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FF3E6C;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 0.2em;
+    padding: 0.5em;
+}
+.bag_btn:hover{
+    background-color: #7e172f;
+    color: white;
+}
+.bag_btn:active{
+    transform: translateY(4px);
+}

@@ -1,0 +1,108 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopIt NOW! | PRODUCTS</title>
+    <link rel="stylesheet" href="/style_home.css" />
+    <link rel="stylesheet" href="/style_products.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="logo">
+          <img src="LOGO.svg" alt="LOGO HERE" />
+        </div>
+        <nav>
+          <ul>
+            <li>category 1</li>
+            <li>category 2</li>
+            <li>category 3</li>
+            <li>category 4</li>
+          </ul>
+          <ul class="action-icons">
+            <li id="profile" onclick="profiletab(this)"><img
+                src="user.svg"
+                alt="user"
+              /><p>Profile</p></li>
+            <li><img src="WishList.svg" alt="Wish List" /><p>Wish List</p></li>
+            <li><img src="bag.svg" alt="Bag" /><p>Bag</p></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="profiletabhide" id="profiletab">
+        <div>
+          <h3>welcome</h3>
+          <button>
+            <a href="/login">login/signup</a>
+          </button>
+        </div>
+        <ul>
+          <li>Orders</li>
+          <li>Wish List</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <section id="products-display">
+        <div class="main">
+          <div class="main-content">
+            <div class="sec-head">
+              <h1>WishList</h1>
+            </div>
+            <div id="new-product" class="product-list">
+                
+              <div class="product-card wishlistProduct">
+                <button class="cancel"><img src="cancel_btn.svg" class="cancel_btn" alt=""></button>
+                <div class="img">
+                  <img src="add1.jpg" alt="" />
+                </div>
+                <div class="info">
+                  <h4>Product Title</h4>
+                  <p>main plain shirt</p>
+                  <h3>$999</h3>
+                  <button class="bag_btn">Add to bag</button>
+                </div>
+              </div>
+              <div class="product-card wishlistProduct">
+                <button class="cancel"><img src="cancel_btn.svg" class="cancel_btn" alt=""></button>
+                <div class="img">
+                  <img src="add1.jpg" alt="" />
+                </div>
+                <div class="info">
+                  <h4>Product Title</h4>
+                  <p>main plain shirt</p>
+                  <h3>$999</h3>
+                  <button class="bag_btn">Add to bag</button>
+                </div>
+              </div>
+              <div class="product-card wishlistProduct">
+                <button class="cancel"><img src="cancel_btn.svg" class="cancel_btn" alt=""></button>
+                <div class="img">
+                  <img src="add1.jpg" alt="" />
+                </div>
+                <div class="info">
+                  <h4>Product Title</h4>
+                  <p>main plain shirt</p>
+                  <h3>$999</h3>
+                  <button class="bag_btn">Add to bag</button>
+                </div>
+              </div>
+              <div class="product-card wishlistProduct">
+                <button class="cancel"><img src="cancel_btn.svg" class="cancel_btn" alt=""></button>
+                <div class="img">
+                  <img src="add1.jpg" alt="" />
+                </div>
+                <div class="info">
+                  <h4>Product Title</h4>
+                  <p>main plain shirt</p>
+                  <h3>$999</h3>
+                  <button class="bag_btn">Add to bag</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script type="text/javascript" src="/animate.js"></script>
+  </body>
+</html>
