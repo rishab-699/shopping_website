@@ -1,0 +1,154 @@
+.sec-head-order{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.order-container{
+    margin: 8em;
+    margin-top: 30em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30em;
+    padding: 3em;
+}
+.bag-products{
+    width: 60%;
+    padding: 5em;
+}
+.order-pricing{
+    width:30%;
+    border: 1px solid rgb(182, 182, 182);
+    padding: 20em;
+    border-radius: 5em;
+}
+.bag-list{
+    width: 100%;
+    margin-top: 50em;
+}
+.bag-itemCard{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10     em;
+    width: 100%;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 10em;
+    padding: 30em;
+}
+.item-img{
+    height: 900em;
+    width: 700em;
+}
+.bag-img{
+    height: 100%;
+    width: 100%;
+}
+.item-info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 50em;
+}
+.item-info h5{
+    color: rgb(19, 19, 19);
+}
+.item-info p{
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+    font-size: 1.5rem !important;
+}
+.item-info .size-qty{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20em;
+}
+.size-qty #size{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(19, 19, 19);
+    background-color: rgb(207, 207, 207);
+    border: 1px solid white;
+    border-radius: 0.3em;
+    padding: 0.5em;
+}
+.size-qty #qty{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(19, 19, 19);
+    background-color: rgb(207, 207, 207);
+    border: 1px solid white;
+    border-radius: 0.3em;
+    padding: 0.5em;
+}
+.item-info .price{
+    color: rgb(61, 61, 61);
+    margin-top: 0.8em;
+}
+.bag-itemCard{
+    position: relative;
+}
+.bag-cancel{
+    position: absolute;
+    top: 0.1em;
+    right: 0.1em;
+    font-size: 1.5rem;
+    padding: 0.3em;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(233, 232, 232);
+    text-align: center;
+}
+.bag-cancel:active{
+    background-color: rgb(192, 191, 191);
+    transform: translateY(2px);
+}
+.cancel_btn{
+    height: 1em;
+    width: 1em;
+}
+.price-table{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 30em;
+    width: 100%;
+}
+.pt-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10em;
+    width: 100%;
+}
+.pt-row p{
+    color: rgb(19, 19, 19);
+    font-size: 1.3rem;
+}
+.total{
+    border-top: 1px solid rgb(177, 177, 177) ;
+    padding: 10em;
+    margin-top: 10em;
+}
+.book-order{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #FF3E6C;
+    color: white;
+    border: 1px solid #FF3E6C;
+    border-radius: 0.2em;
+    padding: 1em 3em;
+    width: 100%;
+    margin-top: 1em;
+}
+.book-order:hover{
+    background: #7c1a31;
+}
+.book-order:active{
+    transform: translateY(4px);
+}

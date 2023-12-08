@@ -73,3 +73,7 @@ function size_clicked(clkid){
         console.error("Element not found with ID: " + clkid);
     }
 }
+
+function link_Wishlist(){
+    window.location.href = "/wishlist"
+}

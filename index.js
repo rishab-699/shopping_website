@@ -39,6 +39,9 @@ app.use(express.static(__dirname+"/publilc/img/adds", {
   app.get('/wishlist',(req,res)=>{
     res.render('wishlist');
   });
+  app.get('/bag',(req,res)=>{
+    res.render('orders');
+  });
   app.listen(port, ()=>{
     console.log('server is running on ${port}');
   })
