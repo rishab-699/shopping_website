@@ -50,10 +50,32 @@
             <h4>Address</h4>
             <h4>Payment</h4>
           </div>
-            <div class="order-container">
+            <section class="order-container" id="order-details">
                 <div class="bag-products">
                     <h2>Items in the bag</h2>
                     <div class="bag-list">
+                        <div class="bag-itemCard">
+                            <button class="bag-cancel"><img src="cancel_btn.svg" class="cancel_btn" alt=""></button>
+                
+                            <div class="item-img">
+                                
+                                <img class="bag-img" src="add1.jpg" alt="">
+                            </div>
+                            <div class="item-info">
+                                <h3>Product Title</h3>
+                                <p>Product sub title</p>
+                                <div class="size-qty">
+                                    <select name="size" id="size">
+                                        <option value="M">size: M</option>
+                                        <option value="L">size: L</option>
+                                        <option value="XL">size: XL</option>
+                                        <option value="XXL">size: XXL</option>
+                                    </select>
+                                    <input type="number" name="qty" id="qty" placeholder="1" min="1" max="10">
+                                </div>
+                                <h3 class="price">Rs. 1999 </h3>
+                            </div>
+                        </div>
                         <div class="bag-itemCard">
                             <button class="bag-cancel"><img src="cancel_btn.svg" class="cancel_btn" alt=""></button>
                 
@@ -102,9 +124,26 @@
                                 <h5>1619</h5>
                         </div>
                     </div>
-                    <button class="book-order">Proceed to Payments</button>
+                    <button class="book-order" onclick="proceedOrders()">Proceed to Payments</button>
                 </div>
-            </div>
+            </section>
+            <section class="order-container inactive" id="address">
+              <div class="address-tab">
+                <form action="">
+                  <div class="add-head">
+                    <h2>Address</h2>
+                  </div>
+                  <div class="inputgroup" >
+                    <input type="text" name="fullname" id="fullname" placeholder="Your Name Here">
+                    <textarea name="street" id="street" cols="100" rows="10" placeholder="Your full address"></textarea>
+                    <input type="text" name="Pincode" id="Pincode" placeholder="City Pincode">
+                  </div>
+                  <div class="form-submit">
+                    <button type="submit" class="book-order">Prodeed to payment</button>
+                  </div>
+                </form>
+              </div>
+            </section>
         </div>
 
       </section>

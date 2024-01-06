@@ -42,6 +42,9 @@ app.use(express.static(__dirname+"/publilc/img/adds", {
   app.get('/bag',(req,res)=>{
     res.render('orders');
   });
+  app.get('/dashboard',(req,res)=>{
+    res.render('dashboard');
+  });
   app.listen(port, ()=>{
     console.log('server is running on ${port}');
   })

@@ -42,11 +42,27 @@ function profiletab(){
         i = true;
     }
 }
+function proceedOrders(){
+    var address = document.getElementById('address');
+    if(address){
+        console.log("address found");
+        address.classList.toggle("active");
+        address.classList.remove("inactive")
+        document.getElementById("order-details").style.display = "none"
+    }else{
+        console.log("address is not found");
+    }
+}
+
+
+
 
 //function to work on single page product functionality
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById('product-layout').style.display = 'none'
-
+    var productLayout = document.getElementById('product-layout');
+    if(productLayout){
+        productLayout.style.display = 'none';
+    }
 });
 function productListDisplay(){
     console.log('second function');
@@ -77,3 +93,4 @@ function size_clicked(clkid){
 function link_Wishlist(){
     window.location.href = "/wishlist"
 }
+
