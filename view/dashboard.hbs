@@ -14,10 +14,10 @@
             <img src="LOGO.svg" alt="ShopIT" />
           </div>
           <ul>
-            <li class="active">Home</li>
-            <li>Products</li>
-            <li>Orders</li>
-            <li>Transactions</li>
+            <li id="home-Text"S onclick="navclick(this)">Home</li>
+            <li id="Product-text" onclick="navclick(this)">Products</li>
+            <li id="order-text" onclick="navclick(this)">Orders</li>
+            <li id="payment-text" onclick="navclick(this)">payments</li>
           </ul>
         </div>
         <div class="main-container">
@@ -26,9 +26,35 @@
               <img src="user.svg" alt="" />
             </button>
           </div>
-          <h1>Main Container</h1>
+          <section id="home">
+            <h2>Hii, USER</h2>
+
+            <div class="information-section">
+              <div class="information-card">
+                <h5>TOTAL ORDERS</h5>
+              </div>
+              <div class="information-card">
+                <h5>TOTAL SALES</h5>
+              </div>
+            </div>
+            <div class="order-details">
+              <h3>New Orders</h3>
+            </div>
+          </section>
+          <section id="products">
+            <h1>Products</h1>
+          </section>
+          <section id="orders">
+            <h1>orders</h1>
+
+          </section>
+          <section id="payments">
+            <h1>payments</h1>
+          </section>
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="/dashboardhandler.js"></script>
+  
   </body>
 </html>

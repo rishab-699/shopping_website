@@ -3,9 +3,18 @@
     margin: 0;
     font-size: 62.5%;
 }
+body{
+  overflow-x: hidden;
+}
+.wrapper{
+  background-color: #F1EDED;
+  max-width: 100%;
+}
 .logo{
     width: 150em;
     height: 75em;
+    padding: 5em;
+    border-bottom: 2px solid black;
   }
   .logo img{
     height: 100%;
@@ -21,16 +30,18 @@
   .side-nav{
     width: 18%;
     min-height: 100%;
-    padding: 3em;
+    padding: 2em;
     background-color: rgba(255, 255, 255, 0.712);
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     gap: 10em;
+    cursor: pointer;
   }
   .side-nav ul{
     width: 80%;
+    margin-top: 50em;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -39,13 +50,13 @@
   }
   li{
     list-style: none;
-    font-size: 3.4rem;
-    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
     padding: 0.3em;
     width: 100%;
   }
   ul .active{
-    background-color: rgba(245, 245, 245, 0.925);
+    background-color: #F1EDED;
     border-left: 5px solid #F56700;
   }
 h1{
@@ -78,9 +89,41 @@ a{
 .userButton{
     position:absolute;
     right:0;
-    padding: 5em;
-    height: 40em;
-    width: 40em;
+    padding: 25em;
     background-color: white;
     border: none;
+    border-radius: 6.875rem;
+    box-shadow: 0px 0px 5.5px 0px rgba(0, 0, 0, 0.25);
+    margin: 5em 10em;
+  }
+  .userButton img{
+    height: 80em;
+    width: 80em;
+  }
+  #home{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .information-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 80em;
+    width: 100%;
+    overflow: hidden;
+  }
+  .information-card, .order-details{
+    border-radius: 1.75rem;
+    background: #FFFCFC;
+    padding: 30em;
+  }
+  .order-details{
+    margin-top: 20em;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
   }
