@@ -4,7 +4,8 @@
     font-size: 62.5%;
 }
 body{
-  overflow-x: hidden;
+  overflow: hidden;
+  max-width: 99.5%;
 }
 .wrapper{
   background-color: #F1EDED;
@@ -22,13 +23,15 @@ body{
   }
   .containers{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
     align-items: stretch;
+    justify-content: flex-start;
+    align-content: center;
     height: 100%;
+    min-width: 100%;
+    max-width: 100%
   }
   .side-nav{
-    width: 18%;
+    min-width: 18%;
     min-height: 100%;
     padding: 2em;
     background-color: rgba(255, 255, 255, 0.712);
@@ -82,23 +85,25 @@ a{
     color: black;
 }
 .main-container{
-    position: relative;
-    width: 88%;
+  position: relative;
+  min-width: 80%;
+  max-width: 80%;
     padding: 5em;
 }
 .userButton{
     position:absolute;
     right:0;
-    padding: 25em;
+    padding: 10em;
     background-color: white;
     border: none;
     border-radius: 6.875rem;
     box-shadow: 0px 0px 5.5px 0px rgba(0, 0, 0, 0.25);
     margin: 5em 10em;
+    z-index: 1;
   }
   .userButton img{
-    height: 80em;
-    width: 80em;
+    height: 50em;
+    width: 50em;
   }
   #home{
     display: flex;
@@ -127,3 +132,453 @@ a{
     align-items: center;
     justify-content: start;
   }
+  .product-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 1em 25em 1em;
+    border-bottom: 1px solid black;
+  }
+  .product-head .addProduct-btn{
+    border: none;
+    border-radius: 0.5rem;
+    background: rgba(245, 103, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 0.2em 0.5em;
+
+  }
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    justify-content: center;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 25em 5em 5em 5em;
+    max-height: 250px;
+}
+.product-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: fit-content;
+  min-width: fit-content;
+  border-radius: 12em;
+  margin: 5em;
+}
+.productListCard{
+  margin-top: 20em;
+}
+.product-card:hover{
+  box-shadow: 0px 0px 19.5px 10px rgba(0, 0, 0, 0.25);
+    transform: translateY(4px);
+}
+.product-card .img {
+  height: 967em;
+  width: 860em;
+}
+.product-card .img img {
+  height: 100%;
+  width: 100%;
+}
+.product-card .info {
+  padding: 30em;
+  width: 100%;
+}
+.edit-productBtn{
+  border: none;
+    border-radius: 0.5rem;
+    background: rgba(245, 103, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 0.3em 0.5em;
+    width: 90%;
+}
+
+button:active{
+  transform: translateY(4px);
+}
+button:hover{
+  box-shadow: 0px 0px 13.8px 3px #BDBDBD;
+}
+#new-products {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+#products .information-card{
+  max-width: 100%;
+}
+
+.addProductNone{
+  display: none;
+}
+.wrapper{
+  position: relative;
+}
+.addProduct{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 1;
+  background:rgba(0, 0, 0, 0.77);
+}
+.addProductCard{
+  position: relative;
+}
+.cancel_btn{
+  background-color: white;
+  height: 25em;
+  width: 25em;
+  border: none;
+  border-radius: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10em;
+  padding: 5em;
+
+}
+.cancel_btn img{
+  height: 100%;
+  width: 100%;
+}
+.addProductCard form{
+  display: flex;
+  align-items: center;
+  gap: 5em;
+}
+.fileManagement{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+}
+.fileManagement .uploadedFile{
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0.3em;
+}
+.uploadedFile ul li{
+  font-size: 2rem;
+}
+.uploadedFile ul{
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 250px;
+  width: 450px;
+  padding: 0;
+  margin: 0;
+}
+.addProductCard{
+  z-index: 1;
+}
+form .productDetails{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10em;
+}
+form *{
+  width: 100%;
+}
+.label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.formErr{
+  font-size: 2rem;
+  color: red;
+}
+#productImg {
+  display: none;
+}
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+}
+.size-checked {
+  border: 1px solid #F56700 !important;
+}
+.size-selection{
+  border: 1px solid black;
+  border-radius: 30rem;
+  padding: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inputGroup span{
+  display: none;
+}
+.size-selection h5{
+  margin: 0;
+  padding: 0;
+}
+.file-icon {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  cursor: pointer;
+}
+.inputGroup .textInput{
+  font-size: 2rem;
+  padding: 0.2em;
+}
+.addProductCard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5em;
+}
+.inputGroup{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+#descCategories{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10em;
+}
+#descCategories button{
+  font-size: 2rem;
+  padding: 0.2em 0.5em;
+  text-align: center;
+  border: none;
+  background-color: #F56700;
+  border-radius: 0.2em;
+  color: white;
+}
+
+#addProductBtn{
+  font-size: 2rem;
+  padding: 0.2em 0.5em;
+  text-align: center;
+  border: none;
+  background-color: #F56700;
+  border-radius: 0.2em;
+  color: white;
+}
+
+#orders .information-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+#orders .information-card .table-container{
+  max-height: 500px;
+  overflow-y: auto;
+}
+#orders .information-card table{
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+tbody{
+  width: 100%;
+}
+th{
+  font-size: 2.5rem;
+}
+td{
+  font-size: 1.5rem;
+}
+th, td{
+  border: 1px solid black;
+  padding: 0.3em;
+}
+td button{
+  font-size: 1.5rem;
+  padding: 0.3em 0.5em;
+  background-color: #F56700;
+  border: none;
+  border-radius: 0.3em;
+  color: white;
+}
+
+.order-detailView{
+  display: none !important;
+}
+
+/*customer Details card css*/
+#customer-details{
+  position: relative;
+  margin-top: 50em;
+}
+#customer-details .cancel-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50em;
+  width: 50em;
+  margin: 30em;
+  padding: 3em;
+  background: none;
+  border: none;
+  border-radius: 3rem;
+}
+#customer-details .cancel-btn img{
+  height: 100%;
+  width: 100%;
+}
+.customer-details{
+  width: 100%;
+  padding-top: 50em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20em;
+}
+.address-detail{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40em;
+}
+.detail-group{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 10em;
+  width: 100%;
+}
+.detail-border{
+  border: none !important;
+  padding: 0;
+}
+.detail-info{
+  border: 1px solid black;
+  position: relative;
+  padding: 50em;
+  width: 100%;
+  min-height: 100%;
+}
+.detail-info span{
+  position: absolute;
+  top: -7px;
+  left: 7px;
+  font-size: 1rem;
+  background-color: white;
+  padding: 0em 0.3em;
+}
+.customer-products{
+  width: 100%;
+}
+.bag-list{
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 150px;
+  width: 95%;
+  padding: 50em;
+}
+.bag-itemCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10em;
+  width: 100%;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 10em;
+  padding: 30em;
+  position: relative;
+}
+.item-img {
+  height: 900em;
+  width: 700em;
+}
+.bag-img {
+  height: 100%;
+  width: 100%;
+}
+.item-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 50em;
+}
+.item-info .size-qty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20em;
+}
+.item-info .price {
+  color: rgb(61, 61, 61);
+  margin-top: 0.8em;
+}
+
+.shipmentBtn{
+  width:100%;
+  padding-top: 50em;
+}
+.shipmentBtn button{
+  width: 100%;
+  font-size: 3rem;
+  color: white;
+  background-color: #F56700;
+  border: none;
+  border-radius: 0.2em;
+}
+.bag-itemCard{
+  position: relative;
+}
+.bag-itemCard .confirm-product{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: absolute;
+  right: 1;
+  margin-right: 3em;
+}
+
+.bag-itemCard .confirm-product .confirmBtn{
+  height: 5rem;
+  width: 5rem;
+  background-color: rgba(96, 254, 0, 1);
+  border: none;
+  border-radius: 0.8rem;
+  padding: 50em;
+}
+.bag-itemCard .confirm-product .cancelBtn{
+  height: 5rem;
+  width: 5rem;
+  background-color: #FE0000;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 50em;
+}
+.bag-itemCard .confirm-product .confirmBtn img, .bag-itemCard .confirm-product .cancelBtn img{
+  height: 100%;
+  width: 100%;
+}

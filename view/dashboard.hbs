@@ -7,25 +7,22 @@
   </head>
   <body>
     <div class="wrapper">
-
       <div class="containers">
         <div class="side-nav">
           <div class="logo">
             <img src="LOGO.svg" alt="ShopIT" />
           </div>
           <ul>
-            <li id="home-Text"S onclick="navclick(this)">Home</li>
+            <li id="home-Text" S onclick="navclick(this)">Home</li>
             <li id="Product-text" onclick="navclick(this)">Products</li>
             <li id="order-text" onclick="navclick(this)">Orders</li>
             <li id="payment-text" onclick="navclick(this)">payments</li>
           </ul>
         </div>
         <div class="main-container">
-          <div class="shortcuts">
-            <button class="userButton">
-              <img src="user.svg" alt="" />
-            </button>
-          </div>
+          <button class="userButton">
+            <img src="user.svg" alt="" />
+          </button>
           <section id="home">
             <h2>Hii, USER</h2>
 
@@ -42,19 +39,635 @@
             </div>
           </section>
           <section id="products">
-            <h1>Products</h1>
+            <h1>Trending Products</h1>
+            <div class="information-card trending-products">
+
+              <div id="new-products">
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                  </div>
+                </div>
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                  </div>
+                </div>
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                  </div>
+                </div>
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                  </div>
+                </div>
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                  </div>
+                </div>
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                  </div>
+                </div>
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                  </div>
+                </div>
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                  </div>
+                </div>
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                  </div>
+                </div>
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="information-card productListCard">
+              <div class="product-head">
+                <h2>Product List</h2>
+                <button class="addProduct-btn" onclick="addProduct()">Add
+                  Product</button>
+              </div>
+              <div id="new-product" class="product-list">
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                    <button class="edit-productBtn">Edit</button>
+                  </div>
+                </div>
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                    <button class="edit-productBtn">Edit</button>
+                  </div>
+                </div>
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                    <button class="edit-productBtn">Edit</button>
+                  </div>
+                </div>
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                    <button class="edit-productBtn">Edit</button>
+                  </div>
+                </div>
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                    <button class="edit-productBtn">Edit</button>
+                  </div>
+                </div>
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                    <button class="edit-productBtn">Edit</button>
+                  </div>
+                </div>
+                <div class="product-card" onclick="productDisplay()">
+                  <div class="img">
+                    <img src="add1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h4>Product Title</h4>
+                    <button class="edit-productBtn">Edit</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </section>
           <section id="orders">
             <h1>orders</h1>
+            <div class="information-card" id="order-details">
+              <h2>Order Details</h2>
+              <div class="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Email</th>
+                      <th>Address</th>
+                      <th>Order Date</th>
+                      <th>Status</th>
+                      <th>More Details</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>rishabjainrishabjainrjrj2001@gmail.com</td>
+                      <td>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Minus quaerat itaque corrupti aspernatur
+                        perspiciatis, cupiditate quae quas voluptas consequatur
+                        at sint porro incidunt inventore laudantium magni quam
+                        eveniet. Ipsum, modi.</td>
+                      <td>12-01-24</td>
+                      <td>Not Shipped</td>
+                      <td><button onclick="orderDetailView()">More Details</button></td>
+                    </tr>
+                    <tr>
+                      <td>rishabjainrishabjainrjrj2001@gmail.com</td>
+                      <td>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Minus quaerat itaque corrupti aspernatur
+                        perspiciatis, cupiditate quae quas voluptas consequatur
+                        at sint porro incidunt inventore laudantium magni quam
+                        eveniet. Ipsum, modi.</td>
+                      <td>12-01-24</td>
+                      <td>ONLINE</td>
+                      <td><button>More Details</button></td>
+                    </tr>
+                    <tr>
+                      <td>rishabjainrishabjainrjrj2001@gmail.com</td>
+                      <td>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Minus quaerat itaque corrupti aspernatur
+                        perspiciatis, cupiditate quae quas voluptas consequatur
+                        at sint porro incidunt inventore laudantium magni quam
+                        eveniet. Ipsum, modi.</td>
+                      <td>12-01-24</td>
+                      <td>ONLINE</td>
+                      <td><button>More Details</button></td>
+                    </tr>
+                    <tr>
+                      <td>rishabjainrishabjainrjrj2001@gmail.com</td>
+                      <td>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Minus quaerat itaque corrupti aspernatur
+                        perspiciatis, cupiditate quae quas voluptas consequatur
+                        at sint porro incidunt inventore laudantium magni quam
+                        eveniet. Ipsum, modi.</td>
+                      <td>12-01-24</td>
+                      <td>ONLINE</td>
+                      <td><button>More Details</button></td>
+                    </tr>
+                    <tr>
+                      <td>rishabjainrishabjainrjrj2001@gmail.com</td>
+                      <td>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Minus quaerat itaque corrupti aspernatur
+                        perspiciatis, cupiditate quae quas voluptas consequatur
+                        at sint porro incidunt inventore laudantium magni quam
+                        eveniet. Ipsum, modi.</td>
+                      <td>12-01-24</td>
+                      <td>ONLINE</td>
+                      <td><button>More Details</button></td>
+                    </tr>
+                    <tr>
+                      <td>rishabjainrishabjainrjrj2001@gmail.com</td>
+                      <td>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Minus quaerat itaque corrupti aspernatur
+                        perspiciatis, cupiditate quae quas voluptas consequatur
+                        at sint porro incidunt inventore laudantium magni quam
+                        eveniet. Ipsum, modi.</td>
+                      <td>12-01-24</td>
+                      <td>ONLINE</td>
+                      <td><button>More Details</button></td>
+                    </tr>
+                    <tr>
+                      <td>rishabjainrishabjainrjrj2001@gmail.com</td>
+                      <td>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Minus quaerat itaque corrupti aspernatur
+                        perspiciatis, cupiditate quae quas voluptas consequatur
+                        at sint porro incidunt inventore laudantium magni quam
+                        eveniet. Ipsum, modi.</td>
+                      <td>12-01-24</td>
+                      <td>ONLINE</td>
+                      <td><button>More Details</button></td>
+                    </tr>
+                    <tr>
+                      <td>rishabjainrishabjainrjrj2001@gmail.com</td>
+                      <td>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Minus quaerat itaque corrupti aspernatur
+                        perspiciatis, cupiditate quae quas voluptas consequatur
+                        at sint porro incidunt inventore laudantium magni quam
+                        eveniet. Ipsum, modi.</td>
+                      <td>12-01-24</td>
+                      <td>ONLINE</td>
+                      <td><button>More Details</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div
+              class="information-card order-detailView"
+              id="customer-details"
+            >
+              <h2>Order Details</h2>
+              <button class="cancel-btn" onclick="customerDetailBack()"><img
+                  src="cancel_btn.svg"
+                  alt=""
+                /></button>
+              <div class="customer-details">
+                <div class="detail-group">
+                  <div class="detail-info">
+                    <span>Customer Name</span>
+                    <p>Rushab M Chajjed</p>
+                  </div>
+                  <div class="detail-info">
+                    <span>Customer Email</span>
+                    <p>Rushab M Chajjed</p>
+                  </div>
+                </div>
+                <div class="detail-group">
+                  <div class="detail-info">
+                    <span>Payment Mode</span>
+                    <p>Online/COD</p>
+                  </div>
+                  <div class="detail-info">
+                    <span>Country</span>
+                    <p>INDIA</p>
+                  </div>
+                </div>
+                <div class="detail-group">
+                  <div class="detail-info">
+                    <span>Address</span>
+                    <p>Online/COD</p>
+                  </div>
+                  <div class="detail-info detail-border">
+                    <div class="address-detail">
+                      <div class="detail-info">
+                        <span>City</span>
+                        <p>Vyara</p>
+                      </div>
+                      <div class="detail-info">
+                        <span>State</span>
+                        <p>Gujarat</p>
+                      </div>
+                      <div class="detail-info">
+                        <span>Pincode</span>
+                        <p>394650</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="customer-products">
+                <h2>Product List</h2>
+                <div class="bag-list">
+                  <div class="bag-itemCard">
+                    <div class="item-img">
+                      <img class="bag-img" src="add1.jpg" alt="" />
+                    </div>
+                    <div class="item-info">
+                      <h3>Product Title</h3>
+                      <p>Product sub title</p>
+                      <div class="size-qty">
+                        <select name="size" id="size">
+                          <option value="M">size: M</option>
+                          <option value="L">size: L</option>
+                          <option value="XL">size: XL</option>
+                          <option value="XXL">size: XXL</option>
+                        </select>
+                        <input
+                          type="number"
+                          name="qty"
+                          id="qty"
+                          placeholder="1"
+                          min="1"
+                          max="10"
+                        />
+                      </div>
+                      <h3 class="price">Rs. 1999 </h3>
+                    </div>
+                    <div class="confirm-product">
+                      <button class="confirmBtn"><img
+                          src="confirmBtnLight.svg"
+                          alt=""
+                        /></button>
+                      <button class="cancelBtn"><img
+                          src="cancel_light.svg"
+                          alt=""
+                        /></button>
+                    </div>
+                  </div>
+                  <div class="bag-itemCard">
+                    <button class="bag-cancel"><img
+                        src="cancel_btn.svg"
+                        class="cancel_btn"
+                        alt=""
+                      /></button>
 
+                    <div class="item-img">
+
+                      <img class="bag-img" src="add1.jpg" alt="" />
+                    </div>
+                    <div class="item-info">
+                      <h3>Product Title</h3>
+                      <p>Product sub title</p>
+                      <div class="size-qty">
+                        <select name="size" id="size">
+                          <option value="M">size: M</option>
+                          <option value="L">size: L</option>
+                          <option value="XL">size: XL</option>
+                          <option value="XXL">size: XXL</option>
+                        </select>
+                        <input
+                          type="number"
+                          name="qty"
+                          id="qty"
+                          placeholder="1"
+                          min="1"
+                          max="10"
+                        />
+                      </div>
+                      <h3 class="price">Rs. 1999 </h3>
+                    </div>
+                  </div>
+                  <div class="bag-itemCard">
+                    <button class="bag-cancel"><img
+                        src="cancel_btn.svg"
+                        class="cancel_btn"
+                        alt=""
+                      /></button>
+
+                    <div class="item-img">
+
+                      <img class="bag-img" src="add1.jpg" alt="" />
+                    </div>
+                    <div class="item-info">
+                      <h3>Product Title</h3>
+                      <p>Product sub title</p>
+                      <div class="size-qty">
+                        <select name="size" id="size">
+                          <option value="M">size: M</option>
+                          <option value="L">size: L</option>
+                          <option value="XL">size: XL</option>
+                          <option value="XXL">size: XXL</option>
+                        </select>
+                        <input
+                          type="number"
+                          name="qty"
+                          id="qty"
+                          placeholder="1"
+                          min="1"
+                          max="10"
+                        />
+                      </div>
+                      <h3 class="price">Rs. 1999 </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shipmentBtn">
+                <button onclick="shipment()">Provide Shipment Details</button>
+              </div>
+            </div>
           </section>
           <section id="payments">
             <h1>payments</h1>
           </section>
         </div>
       </div>
+      <div class="addProductNone" id="product-form">
+        <div class="addProductCard information-card">
+          <button class="cancel_btn" onclick="closeAddProduct()"><img
+              src="cancel_btn.svg"
+              alt="Clear"
+            /></button>
+          <h1>Add Product</h1>
+          <form
+            action="/dashboard"
+            method="post"
+            onsubmit="return formValidate(event)"
+            enctype="multipart/form-data"
+          >
+            <div class="fileManagement">
+              <div class="fileUpload">
+                <label class="label">
+                  <input
+                    type="file"
+                    name="filetoupload[]"
+                    id="productImg"
+                    multiple
+                  />
+                  <button type="button" onclick="triggerFileInput()">
+                    <img src="add button.png" class="file-icon" alt="" />
+                  </button>
+                </label>
+                <span id="fileNamesErr" class="formErr"></span>
+              </div>
+              <div class="uploadedFile">
+                <ul id="filenames">
+                </ul>
+              </div>
+            </div>
+            <div class="productDetails">
+              <div class="inputGroup">
+                <input
+                  type="text"
+                  name="Product-title"
+                  id="product-title"
+                  placeholder="Product Title"
+                  class="textInput"
+                />
+                <span id="title-err"></span>
+              </div>
+              <div class="inputGroup">
+                <input
+                  type="text"
+                  name="Product-description"
+                  id="product-desc"
+                  placeholder="Sub Title"
+                  class="textInput"
+                />
+                <span id="desc-err"></span>
+              </div>
+              <div class="inputGroup">
+                <input
+                  type="number"
+                  name="qty"
+                  id="qty"
+                  placeholder="qty"
+                  min="1"
+                  class="textInput"
+                />
+                <input
+                  type="text"
+                  name="price"
+                  id="price"
+                  placeholder="9999"
+                  class="textInput"
+                />
+                <span id="price-err"></span>
+              </div>
+              <div class="inputGroup">
+                <label for="38" id="m" class="size-selection"><input
+                  type="checkbox"
+                  name="size[]"
+                  id="38"
+                  value="38"
+                  onchange="sizeBtn(this,'m')"
+                /> <h5>38</h5></label>
+                <label for="40" id="l" class="size-selection"><input
+                  type="checkbox"
+                  name="size[]"
+                  id="40"
+                  value="40"
+                  onchange="sizeBtn(this,'l')"
+                /><h5>40</h5></label>
+                <label for="42" id="xl" class="size-selection"><input
+                  type="checkbox"
+                  name="size[]"
+                  id="42"
+                  value="42"
+                  onchange="sizeBtn(this,'xl')"
+                /><h5>42</h5></label>
+                <label for="44" id="xxl" class="size-selection"><input
+                  type="checkbox"
+                  name="size[]"
+                  id="44"
+                  value="44"
+                  onchange="sizeBtn(this,'xxl')"
+                /><h5>44</h5></label>
+                <label for="46" id="xxxl" class="size-selection"><input
+                  type="checkbox"
+                  name="size[]"
+                  id="46"
+                  value="46"
+                  onchange="sizeBtn(this,'xxxl')"
+                /><h5>46</h5></label>
+              </div>
+              <div class="inputGroup">
+                <input
+                  type="text"
+                  name="cloth"
+                  id="cloth"
+                  placeholder="Cloth Material"
+                  class="textInput"
+                />
+                <span id="cloth-err"></span>
+                <select name="category" id="category" class="textInput">
+                  <option value="men">men</option>
+                  <option value="women">women</option>
+                  <option value="kids">kids</option>
+                </select>
+              </div>
+              <div id="descCategories">
+                <button type="button" onclick="descriptionCategories()">Add
+                  description categories</button>
+                  <span id="desc-err"></span>
+                <div class="inputGroup">
+                  <input
+                    type="text"
+                    name="description-Title[]"
+                    id="description-Title"
+                    placeholder="description-Title"
+                    class="textInput"
+                  />
+                  <input
+                    type="text"
+                    name="description[]"
+                    id="description"
+                    placeholder="description"
+                    class="textInput"
+                  />
+                </div>
+              </div>
+              <div class="inputGroup">
+                <button id="addProductBtn">Add Product</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="addProductNone" id="Shipment-form">
+        <div class="addProductCard information-card">
+          <button class="cancel_btn" onclick="closeshipment()"><img
+              src="cancel_btn.svg"
+              alt="Clear"
+            /></button>
+          <h1>Provide Shipment Details</h1>
+          <form action="">
+
+            <div class="productDetails">
+              <div class="inputGroup">
+                <input
+                  type="text"
+                  name="Shipment-company"
+                  id="Shipment-company"
+                  placeholder="Shipment company"
+                  class="textInput"
+                />
+              </div>
+              <div class="inputGroup">
+                <input
+                  type="text"
+                  name="consignmentNo"
+                  id="consignmentNo"
+                  placeholder="consignmentNo"
+                  class="textInput"
+                />
+              </div>
+              <div class="inputGroup">
+                <button id="addProductBtn">Confirm</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <script type="text/javascript" src="/dashboardhandler.js"></script>
-  
+    <script type="text/javascript" src="/data_management.js"></script>
+
   </body>
 </html>

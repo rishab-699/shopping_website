@@ -1,0 +1,67 @@
+create table customer(
+    phno char(10) primary key,
+    cname varchar(50),
+    email varchar(100),
+    address address
+);
+CREATE TABLE pcategory(
+    pcid integer primary key,
+    category varchar(100)
+);
+CREATE TABLE product(
+    pid integer primary key,
+    title varchar(100),
+    cloth varchar(50),
+    qty integer,
+    subTitle varchar(100),
+    price float,
+    pcid integer,
+    foreign key(pcid) references pcategory(pcid)
+);
+CREATE TABLE productIMG(
+    pid integer primary key,
+    pimg varchar(100),
+    foreign key(product) references product(pid)
+);
+CREATE TABLE pdescriptions(
+    descTitle varchar(50),
+    desc varchar(100),
+    pid integer,
+    primary key(descTitle, pid),
+    foreign key(pid) references product(pid)
+);
+CREATE TABLE orderProduct(
+    oid varchar(50),
+    pid integer,
+    phno char(10),
+    amt double,
+    foreign key(pid) references product(pid),
+    foreign key(phno) references customer(phno),
+    primary key(oid, pid, phno)
+);
+CREATE TABLE shipmentDetail(
+    shipmentId varchar(50) primary key,
+    company varchar(50),
+);
+CREATE TABLE orders(
+    oid varchar(50),
+    totalprdct integer,
+    phno char(10),
+    totalAmt double,
+    payType integer,
+    shipmentId varchar(50),
+    primary key(oid, phno),
+    foreign key(oid) references orderProduct(oid),
+    foreign key(phno) references customer(phno),
+    foreign key(shipmentId) references shipmentDetail(shipmentId)
+);
+
+if((productImg.type != "application/png")||(productImg.type != "application/jpg")||(productImg.type != "application/jpeg")){
+          document.getElementById("fileNamesErr").innerHTML = "Uploaded file must be JPG/ PNG OR JPEG format"
+          file.splice(i, 1);
+      }
+      else{
+      console.log('Selected file ' + (i + 1) + ':', file[i].name);
+      html = '<li>'+file[i].name+'</li>';
+      document.getElementById('filenames').insertAdjacentHTML('beforeend',html);
+      }
